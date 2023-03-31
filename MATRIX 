@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(){
+    int i, j, sum = 0
+    int a[i][j]
+
+    for (i=0; i<n; i++){
+        sum+=a a[i][j]; //add the diagonal element to the sum
+    }
+    printf("the sum of the the main diagonal is: %d\n", sum);
+
+    return 0;
+}
