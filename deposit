@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+struct bank
+{
+    float balance;
+    float deposit;
+    float withdraw;
+    float deposit2;
+    float withdraw2;
+};
+
+int main()
+{
+    struct bank acc;
+    float total;
+    
+    printf("enter bank balance:\nRs:");
+    scanf("%f", &acc.balance);
+    
+    printf("enter first deposit:\nRs:");
+    scanf("%f", &acc.deposit);
+    
+    printf("enter first withdrawal:\nRs:");
+    scanf("%f", &acc.withdraw);
+    
+    printf("enter second deposit:\nRs:");
+    scanf("%f", &acc.deposit2);
+    
+    printf("enter second withdrawal:\nRs:");
+    scanf("%f", &acc.withdraw2);
+    
+    total= acc.balance+acc.deposit+acc.deposit2-acc.withdraw-acc.withdraw2;
+    
+    printf("the bank balace is \nRs:%f", total);
+    
+    return 0;
+    
+}
